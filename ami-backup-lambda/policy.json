@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+            {
+                    "Sid": "lambda",
+                    "Effect": "Allow",
+                    "Action": [
+                            "sts:AssumeRole",
+                            "ssm:GetParameter",
+                            "ssm:PutParameter",
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents"
+                    ],
+                    "Resource": "*"
+            }
+    ]
+}
